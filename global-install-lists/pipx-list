@@ -1,0 +1,21 @@
+venvs are in /home/jonathan/.local/pipx/venvs
+apps are exposed on your $PATH at /home/jonathan/.local/bin
+   package black 22.6.0, installed using Python 3.10.5
+    - black
+    - blackd
+   package grip 4.6.1, installed using Python 3.10.5
+    - grip
+   package isort 5.10.1, installed using Python 3.10.5
+    - isort
+    - isort-identify-imports
+   package nose 1.3.7, installed using Python 3.10.5
+    - nosetests
+    - nosetests-3.4
+   package pipenv 2022.7.4, installed using Python 3.10.5
+    - pipenv
+    - pipenv-resolver
+   package pyflakes 2.4.0, installed using Python 3.10.5
+    - pyflakes
+   package pytest 7.1.2, installed using Python 3.10.5
+    - py.test
+    - pytest
