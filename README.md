@@ -1,20 +1,18 @@
-# Personal macOS Config
+# Personal Archcraft Config
 
-This is most of my config dotfiles for my work MacBook. I'm publishing this for my own use, but since there's nothing secret in it, I guess you can see it too if you like.
+This is most of my config dotfiles for my personal [Archcraft](https://archcraft.io) PC. Most of the configuration in here is forked from Archcraft's (awesome) defaults! Most of the rest of it is forked from [my Mac config](https://github.com/jming422/mac-config). I'm publishing this for my own use, but since there's nothing secret in it, I guess you can see it too if you like.
 
-If this directory is cloned as `~/.config`, then many of these configs will Just Work™. Some programs do not know how to look in `~/.config` though -- those files must be symlinked into their dotfile location in `~`. For now, those files include:
+If this directory is cloned as `~/.config`, then many of these configs will Just Work™. Some programs do not know how to look in `~/.config` by default -- those files should be symlinked into their dotfile location in `~` (unless you feel like figuring out how to configure those programs to look in `$XDG_CONFIG_HOME` instead of `$HOME`, which I don't heh). For now, those files include:
 
+- bash_logout
 - bash_profile
 - bashrc
 - clojure
 - curlrc
 - gitconfig
-- gitignore_global
-- ngrok2
-- npmrc
-- simplebarrc
-- vimrc
+- gtkrc-2.0
+- profile
+- zshenv
+- zshrc
 
 To symlink one, cd to `~` and then do something like `ln -s .config/bashrc .bashrc`
-
-The `simplebarrc` you see in there is for https://github.com/Jean-Tinland/simple-bar, which I usually have installed under my fork https://github.com/jming422/simple-bar. I try to issue PRs on my fork back to the original repo, so it's probably best to just install the real one and not use my fork.

@@ -24,4 +24,4 @@ vterm_set_directory() {
     vterm_cmd update-pwd "$PWD/"
 }
 
-PROMPT_COMMAND="vterm_set_directory${PROMPT_COMMAND:+; $PROMPT_COMMAND}"
+add-zsh-hook -Uz chpwd (){ vterm_set_directory  }

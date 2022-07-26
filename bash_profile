@@ -1,8 +1,8 @@
-# -*- mode: sh; -*-
-source ~/.bashrc
+#
+# ~/.bash_profile
+#
 
-# Disable XON/XOFF so that C-s does forward i-search
-stty -ixon
-
-# Plugins, completions, etc.
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+. "/home/jonathan/.config/cargo/env"
+# Use 1Password for key management
+export SSH_AUTH_SOCK=~/.1password/agent.sock

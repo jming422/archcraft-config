@@ -1,63 +1,12 @@
-# -*- mode: gitignore; -*-
-# Chemacs cloned repo
-/emacs
-# Doom Emacs cloned repo
-/doom-emacs
-# Directory full of Ubersicht cloned repos
-/ubersicht
-# Rustup and cargo installation directories
-/cargo
-/rustup
-# nvm install directory
-/nvm
-# I don't know what this is
-/configstore
-# This contains an auth token
-/ngrok2/ngrok.yml
-
-.DS_Store
-*.log
-tmp/
-.AppleDouble
-.LSOverride
-
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-.idea
-
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-[._]s[a-rt-v][a-z]
-[._]ss[a-gi-z]
-[._]sw[a-p]
-Session.vim
-Sessionx.vim
-.netrwhist
-*~
-tags
-[._]*.un~
-
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
-.org-id-locations
-*_archive
-*_flymake.*
-/eshell/history
-/eshell/lastdir
-*.rel
-flycheck_*.el
-.projectile
-.dir-locals.el
-/network-security.data
-
-*.orig
+__pycache__
+1Password
+BraveSoftware
+cargo
+chromium
+emacs
+NativeMessagingHosts
+nvm
+pulse
+rustup
+spotify
+dconf

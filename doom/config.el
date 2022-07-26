@@ -21,7 +21,7 @@
 ;; font string. You generally only need these two:
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
-(setq doom-font (font-spec :family "FiraCode Nerd Font" :size 12))
+(setq doom-font (font-spec :family "JetBrains Mono Nerd Font" :size 12))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -32,7 +32,7 @@
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
 ;; macOS customizations
-(when (eq system-type 'darwin)
+(when IS-MAC
   ;; Mac modifier key rebindings
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier 'super)
@@ -42,6 +42,11 @@
               (pcase appearance
                 ('light (load-theme 'doom-one-light t))
                 ('dark (load-theme 'doom-one t))))))
+
+;; Linux customizations
+(when IS-LINUX
+  (load-theme 'doom-spacegrey t)
+  (setq auth-sources '("/home/jonathan/.config/emacs/.local/etc/authinfo.gpg" "~/.authinfo.gpg" "secrets:Login")))
 
 (custom-set-faces!
   `(vterm-color-black :foreground ,(doom-color 'fg) :background ,(doom-darken 'fg 0.2))
@@ -187,17 +192,6 @@
   (xref-pop-marker-stack)
   (sp-forward-sexp)
   (sp-next-sexp))
-
-(defun custom-refactor-migration ()
-  "Refactors current buffer from a fresh db-migrate migration to use my custom migration script instead."
-  (interactive)
-  (goto-char 462)
-  (kill-sexp)
-  (delete-region (buffer-end 0) (buffer-end 1))
-  (insert-file-contents (concat doom-private-dir "custom-migration-template.js"))
-  (goto-char 226)
-  (yank)
-  (kill-sexp))
 
 ;; Hacks
 ;; Stuff to modify Doom's behavior in weird or custom ways. These are the most likely things in this file to break.

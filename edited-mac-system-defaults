@@ -1,5 +1,0 @@
-defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 70 '<dict><key>enabled</key><false/></dict>'
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-defaults write emacs-27.0.90 ApplePressAndHoldEnabled -bool false
-defaults write org.gnu.Emacs ApplePressAndHoldEnabled -bool false
-defaults write com.googlecode.iterm2 ApplePressAndHoldEnabled -bool false

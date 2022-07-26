@@ -89,8 +89,8 @@
        ;;ansible
        ;;biblio            ; Writes a PhD for you (citation needed)
        (debugger +lsp)          ; FIXME stepping through code, to help you add bugs
-       ;;direnv
-       (docker +lsp)
+       direnv
+       (:if IS-MAC (docker +lsp))
        ;;editorconfig      ; let someone else argue about tabs vs spaces
        ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)     ; run code, run (also, repls)
@@ -117,7 +117,7 @@
        ;;agda              ; types of types of types of types...
        ;;beancount         ; mind the GAAP
        ;;cc                ; C > C++ == 1
-       clojure           ; java with a lisp
+       (:if IS-MAC clojure)           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
        ;;crystal           ; ruby at the speed of c
@@ -166,12 +166,12 @@
        ;;rst               ; ReST in peace
        ruby     ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
        (rust +lsp)              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
-       (scala +lsp)             ; java, but good
+       (:if IS-MAC (scala +lsp))             ; java, but good
        ;;(scheme +guile)   ; a fully conniving family of lisps
        sh                ; she sells {ba,z,fi}sh shells on the C xor
        ;;sml
        ;;solidity          ; do you need a blockchain? No.
-       (swift +lsp)             ; who asked for emoji variables?
+       (:if IS-MAC (swift +lsp))             ; who asked for emoji variables?
        ;;terra             ; Earth and Moon in alignment for performance.
        ;;web               ; the tubes
        yaml              ; JSON, but readable

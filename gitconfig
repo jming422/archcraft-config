@@ -3,7 +3,7 @@
 	email = jming422@gmail.com
 	signingkey = 8DF093928BE30B9B
 [core]
-	excludesFile = ~/.gitignore_global
+	excludesFile = ~/.config/gitignore_global
 [merge]
 	tool = ediff
 [commit]
