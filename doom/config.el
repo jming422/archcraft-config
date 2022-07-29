@@ -46,7 +46,9 @@
 ;; Linux customizations
 (when IS-LINUX
   (load-theme 'doom-spacegrey t)
-  (setq auth-sources '("/home/jonathan/.config/emacs/.local/etc/authinfo.gpg" "~/.authinfo.gpg" "secrets:Login")))
+  ;; To use Magit Forge without authinfo.gpg: 1) have a Secret Service API implementing service running, like gnome-keyring, and 2) run THIS elisp
+  ;; (secrets-create-item "Login" "Emacs Forge GitHub Token" "<the-token>" :user "<github-username>^forge" :host "api.github.com")
+  (setq auth-sources '("secrets:Login" "~/.config/emacs/.local/etc/authinfo.gpg" "~/.authinfo.gpg")))
 
 (custom-set-faces!
   `(vterm-color-black :foreground ,(doom-color 'fg) :background ,(doom-darken 'fg 0.2))

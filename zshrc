@@ -146,4 +146,5 @@ alias gc='git commit -m'
 alias gp='git push origin master'
 
 # emacs
+alias de='emacs -nw'
 source $XDG_CONFIG_HOME/vterm-dir-tracking.sh
