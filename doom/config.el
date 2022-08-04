@@ -157,6 +157,9 @@
   (setq crdt-use-tuntox 'confirm)
   (setq crdt-tuntox-password-in-url t))
 
+(use-package! ron-mode
+  :mode "\\.ron\\'")
+
 (add-to-list 'auto-mode-alist '("\\.env\\'" . fundamental-mode))
 
 ;; Custom functions & bindings

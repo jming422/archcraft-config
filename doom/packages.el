@@ -59,4 +59,4 @@
 (package! literate-calc-mode)
 (package! prettier-js)
 (package! fireplace)
-(package! meson-mode)
+(package! ron-mode)
