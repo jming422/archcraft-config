@@ -1,7 +1,7 @@
-/home/jonathan/.config/nvm/versions/node/v16.16.0/lib
-├── corepack@0.12.1
-├── markdownlint@0.26.1
-├── npm@8.16.0
+/home/jonathan/.config/nvm/versions/node/v16.17.0/lib
+├── corepack@0.13.0
+├── markdownlint@0.26.2
+├── npm@8.18.0
 ├── prettier@2.7.1
-└── typescript@4.7.4
+└── typescript@4.8.2
 
