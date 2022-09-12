@@ -42,3 +42,6 @@ exec thunar --daemon &
 ksuperkey -e 'Super_L=Alt_L|F1' &
 ksuperkey -e 'Super_R=Alt_L|F1' &
 
+## Welcome-App-Run-Once
+archcraft-welcome &
+sed -i -e '/## Welcome-App-Run-Once/Q' "$HOME"/.config/openbox/autostart

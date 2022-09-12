@@ -6,7 +6,7 @@ archcraft-about 1.0-2
 archcraft-artworks 1.0-2
 archcraft-backgrounds 1.0-4
 archcraft-backgrounds-branding 1.0-2
-archcraft-bspwm 2.0-0
+archcraft-bspwm 2.0-1
 archcraft-cursor-fluent 1.0-2
 archcraft-cursor-future 1.0-2
 archcraft-cursor-layan 1.0-2
@@ -55,7 +55,7 @@ archcraft-icons-zafiro 1.0-3
 archcraft-mirrorlist 1.0-2
 archcraft-music 1.0-2
 archcraft-omz 1.0-4
-archcraft-openbox 2.0-0
+archcraft-openbox 2.0-1
 archcraft-pixmaps 1.0-3
 archcraft-plymouth-theme 1.0-2
 archcraft-scripts 1.0-9
@@ -88,14 +88,14 @@ discord 0.0.19-1
 dmidecode 3.4-1
 downgrade 11.2.1-1
 edk2-shell 202208-1
-emacs-nativecomp 28.1-7
+emacs-nativecomp 28.2-1
 espeakup 0.90-1
 ethtool 1:5.19-1
 fatresize 1.1.0-1
 fd 8.4.0-1
 fsarchiver 0.8.6-1
 gnu-netcat 0.7.1-8
-go 2:1.19-1
+go 2:1.19.1-1
 gparted 1.4.0-1
 gpick 0.2.6-5
 gtk-engine-murrine 0.98.2-4
@@ -135,7 +135,7 @@ nvidia 515.65.01-12
 nvme-cli 2.1.2-1
 open-iscsi 2.1.7-2
 openconnect 1:9.01-2
-pandoc 2.18-52
+pandoc 2.18-56
 patch 2.7.6-8
 pavucontrol 1:5.0+r61+gee77d86-2
 picom-ibhagwan-git 1578_Next.297.gc4107bb_2021.11.03-1
@@ -153,11 +153,11 @@ refind 0.13.3.1-1
 reflector 2021.11-5
 ripgrep 13.0.0-2
 rp-pppoe 3.15-2
-rust-analyzer 20220905-1
+rust-analyzer 20220912-1
 rxvt-unicode-terminfo 9.30-1
 sdparm 1.12-1
 sg3_utils 1.47-1
-shellcheck 0.8.0-192
+shellcheck 0.8.0-196
 shfmt 3.5.1-1
 smartmontools 7.3-1
 sof-firmware 2.2.1-1
