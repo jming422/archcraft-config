@@ -101,7 +101,7 @@ bspc rule -a Brave-browser desktop='^2' follow=on focus=on
 ## 3 > code (always open editors on workspace-3)
 declare -a code=(Geany code-oss Emacs)
 for i in ${code[@]}; do
-   bspc rule -a $i desktop='^3' follow=on focus=on; done
+   bspc rule -a $i desktop='^3' state=tiled follow=on focus=on; done
 
 ## 4 > communication (always open communication apps on workspace-4)
 declare -a comm=(Thunderbird TelegramDesktop Hexchat Discord Signal)
