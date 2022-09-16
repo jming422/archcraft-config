@@ -54,7 +54,6 @@
 (package! evil-easymotion :recipe (:host github :repo "CloseToZero/evil-easymotion" :branch "master"))
 
 ;; Additions
-(package! crdt :recipe (:host nil :repo "https://code.librehq.com/qhong/crdt.el.git" :type git :branch "master"))
 (package! evil-cleverparens)
 (package! literate-calc-mode)
 (package! prettier-js)

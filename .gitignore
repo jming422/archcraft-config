@@ -1,8 +1,6 @@
-__pycache__
-1Password
-BraveSoftware
-NativeMessagingHosts
-
+# -*- mode: gitignore; -*-
+/1Password
+/BraveSoftware
 /cargo
 /chromium
 /configstore
@@ -14,4 +12,7 @@ NativeMessagingHosts
 /rustup
 /shuttle
 /spotify
-pavucontrol.ini
+/pavucontrol.ini
+
+__pycache__
+NativeMessagingHosts

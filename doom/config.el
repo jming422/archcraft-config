@@ -153,10 +153,6 @@
 (add-hook! rainbow-mode
   (hl-line-mode (if rainbow-mode -1 +1)))
 
-(after! crdt
-  (setq crdt-use-tuntox 'confirm)
-  (setq crdt-tuntox-password-in-url t))
-
 (use-package! ron-mode
   :mode "\\.ron\\'")
 
