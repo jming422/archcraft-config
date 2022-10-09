@@ -1,16 +1,20 @@
 [user]
-	name = Jonathan Ming
-	email = jming422@gmail.com
-	signingkey = 8DF093928BE30B9B
+    name = Jonathan Ming
+    email = jming422@gmail.com
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKQ/d0/auXPuVHSRHxtMFLJtcYzgUdFLPVPYTwvwoaPE
 [core]
-	excludesFile = ~/.config/gitignore_global
+    excludesFile = ~/.config/gitignore_global
 [merge]
-	tool = ediff
+    tool = ediff
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    program = /opt/1Password/op-ssh-sign
 [commit]
-	gpgsign = true
+    gpgsign = true
 [github]
-	user = jming422
+    user = jming422
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [pull]
-	rebase = false
+    rebase = false
