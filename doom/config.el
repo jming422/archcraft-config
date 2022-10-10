@@ -184,6 +184,7 @@
 (global-set-key (kbd "M-/") #'hippie-expand)
 (global-set-key (kbd "H-SPC") #'just-one-space) ;; because on macOS I use M-SPC for Spotlight
 (global-set-key (kbd "C-§") #'ignore)
+(global-set-key (kbd "<f15>") #'ignore)
 (global-set-key (kbd "<f16>") #'ignore)
 (global-set-key (kbd "<XF86AudioRaiseVolume>") #'ignore)
 (global-set-key (kbd "<XF86AudioLowerVolume>") #'ignore)
