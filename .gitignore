@@ -1,18 +1,21 @@
 # -*- mode: gitignore; -*-
 /1Password
 /BraveSoftware
+/Signal
 /cargo
 /chromium
 /configstore
 /dconf
 /discord
 /emacs
+/gtk-2.0
 /nvm
+/pavucontrol.ini
 /pulse
 /rustup
 /shuttle
 /spotify
-/pavucontrol.ini
+/viewnior
 
 __pycache__
 NativeMessagingHosts

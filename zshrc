@@ -4,7 +4,7 @@ export SSH_AUTH_SOCK=~/.1password/agent.sock
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export PATH="$PATH:$HOME/.local/bin:$HOME/.config/emacs/bin:$HOME/go/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/.config/emacs/bin:$HOME/go/bin:$HOME/.config/cargo/bin"
 
 export XDG_CONFIG_HOME=$HOME/.config
 export RUSTUP_HOME=$HOME/.config/rustup
@@ -148,3 +148,7 @@ alias gp='git push origin master'
 # emacs
 alias de='emacs -nw'
 source $XDG_CONFIG_HOME/vterm-dir-tracking.sh
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
