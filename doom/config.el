@@ -182,7 +182,9 @@
 
 ;; Custom functions & bindings
 (global-set-key (kbd "M-/") #'hippie-expand)
-(global-set-key (kbd "H-SPC") #'just-one-space) ;; because on macOS I use M-SPC for Spotlight
+ ;; because I use ⌘-SPC for Raycast and like a dingus I still have ⌘ in Emacs
+ ;; set to meta instead of super
+(global-set-key (kbd "H-SPC") #'just-one-space)
 (global-set-key (kbd "C-§") #'ignore)
 (global-set-key (kbd "<f15>") #'ignore)
 (global-set-key (kbd "<f16>") #'ignore)
