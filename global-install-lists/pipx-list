@@ -17,10 +17,10 @@ apps are exposed on your $PATH at /home/jonathan/.local/bin
    package nose 1.3.7, installed using Python 3.10.7
     - nosetests
     - nosetests-3.4
-   package pipenv 2022.11.11, installed using Python 3.10.7
+   package pipenv 2022.11.23, installed using Python 3.10.7
     - pipenv
     - pipenv-resolver
-   package pyflakes 2.5.0, installed using Python 3.10.7
+   package pyflakes 3.0.0, installed using Python 3.10.7
     - pyflakes
    package pytest 7.2.0, installed using Python 3.10.7
     - py.test
