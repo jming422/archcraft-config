@@ -16,3 +16,9 @@ If this directory is cloned as `~/.config`, then many of these configs will Just
 - zshrc
 
 To symlink one, cd to `~` and then do something like `ln -s .config/bashrc .bashrc`
+
+## Login keyring stuff
+
+- install seahorse
+- setup 1Password like https://developer.1password.com/docs/ssh/git-commit-signing and https://developer.1password.com/docs/ssh/agent/
+- make edits to /etc/pam.d/login and /etc/pam.d/passwd as described in https://wiki.archlinux.org/title/GNOME/Keyring#Automatically_change_keyring_password_with_user_password
