@@ -1,6 +1,6 @@
-cargo-expand v1.0.36:
+cargo-expand v1.0.37:
     cargo-expand
 cargo-shuttle v0.8.1:
     cargo-shuttle
-cargo-watch v8.1.2:
+cargo-watch v8.3.0:
     cargo-watch

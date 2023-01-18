@@ -22,7 +22,7 @@ apps are exposed on your $PATH at /home/jonathan/.local/bin
     - pipenv-resolver
    package pyflakes 3.0.1, installed using Python 3.10.7
     - pyflakes
-   package pytest 7.2.0, installed using Python 3.10.7
+   package pytest 7.2.1, installed using Python 3.10.7
     - py.test
     - pytest
    package seashells 0.1.2, installed using Python 3.10.7
