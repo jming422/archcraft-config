@@ -127,6 +127,7 @@ nbd 3.24-1
 ncdu 2.2.1-1
 ncmpcpp 0.9.2-9
 ndisc6 1.0.6-1
+nerd-fonts-jetbrains-mono 2.2.2-2
 nethogs 0.8.7-1
 networkmanager-openvpn 1.10.2-1
 nfs-utils 2.6.2-1
@@ -171,7 +172,6 @@ terminus-font 4.49.1-2
 thefuck 3.32-4
 timeshift 22.11.2-1
 trash-cli 0.22.10.20-3
-ttf-jetbrains-mono 2.304-1
 usbutils 015-2
 wireless_tools 30.pre9-3
 wmctrl 1.07-6
