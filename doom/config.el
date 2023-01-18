@@ -27,7 +27,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function.
-(setq doom-theme 'doom-tomorrow-day)
+(setq doom-theme (if IS-MAC 'doom-tomorrow-day 'doom-miramare))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -50,7 +50,6 @@
 
 ;; Linux customizations
 (when IS-LINUX
-  (load-theme 'doom-palenight t)
   ;; To use Magit Forge without authinfo.gpg: 1) have a Secret Service API implementing service running, like gnome-keyring, and 2) run THIS elisp
   ;; (secrets-create-item "Login" "Emacs Forge GitHub Token" "<the-token>" :user "<github-username>^forge" :host "api.github.com")
   (setq auth-sources '("secrets:Login" "~/.config/emacs/.local/etc/authinfo.gpg" "~/.authinfo.gpg")))
