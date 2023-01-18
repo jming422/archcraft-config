@@ -18,24 +18,16 @@
 ;; - `doom-unicode-font' -- for unicode glyphs
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
 ;;
-;; See 'C-h v doom-font' for documentation and more examples of what they
-;; accept. For example:
-;;
-;;(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
-;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
-;;
-;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
-;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
-;; refresh your font settings. If Emacs still can't find your font, it likely
-;; wasn't installed correctly. Font issues are rarely Doom issues!
-(setq doom-font (font-spec :family "FiraCode Nerd Font" :size 12))
-(setq doom-serif-font nil)
-(setq doom-variable-pitch-font nil)
+;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
+;; font string. You generally only need these two:
+;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
+;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
+(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 12))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one-light)
+;; `load-theme' function.
+(setq doom-theme 'doom-tomorrow-day)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -53,8 +45,8 @@
   (add-hook 'ns-system-appearance-change-functions
             (lambda (appearance)
               (pcase appearance
-                ('light (load-theme 'doom-one-light t))
-                ('dark (load-theme 'doom-one t))))))
+                ('light (load-theme 'doom-tomorrow-day t))
+                ('dark (load-theme 'doom-tomorrow-night t))))))
 
 ;; Linux customizations
 (when IS-LINUX
@@ -181,7 +173,7 @@
   ;; (intentionally) and since my starship prompt tries to use that codepoint to
   ;; hit the Java icon in the Nerd Font, I want to lock that codepoint to the Nerd
   ;; Font instead of Material Icons.
-  (set-fontset-font t #Xe256 (font-spec :family "FiraCode Nerd Font")))
+  (set-fontset-font t #Xe256 (font-spec :family "JetBrainsMono Nerd Font")))
 
 (add-hook! rainbow-mode
   (hl-line-mode (if rainbow-mode -1 +1)))

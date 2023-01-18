@@ -6,7 +6,7 @@
  '(safe-local-variable-values
    '((lsp-disabled-clients ts-ls)
      (lsp-disabled-clients quote
-                           (ts-ls))
+      (ts-ls))
      (lsp-disabled-clients . ts-ls)
      (cider-clojure-cli-aliases . "dev"))))
 (custom-set-faces
