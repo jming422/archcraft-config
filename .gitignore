@@ -1,6 +1,7 @@
 # -*- mode: gitignore; -*-
 /1Password
 /BraveSoftware
+/Logseq
 /Signal
 /cargo
 /chromium
@@ -10,6 +11,7 @@
 /emacs
 /gpick
 /gtk-2.0
+/gtk-3.0
 /nvm
 /pavucontrol.ini
 /pulse
