@@ -1,0 +1,96 @@
+configuration {
+    display-calc: 					"Calc :";
+	click-to-exit: 					true;
+    disable-history:                false;
+}
+
+@import "font.rasi"
+@import "colors.rasi"
+
+* {
+    background-color:             	@background;
+    text-color: 					@foreground;
+    placeholder-color:              @foreground;
+}
+
+
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+    border:                  		1px;
+    border-color:                  	@selected;
+    border-radius:                  0px;
+    width:                          500px;
+    location:                       center;
+    anchor:                         center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+prompt {
+    enabled: 						true;
+	margin: 						0px 0px 0px 8px;
+    padding:    					6px 0px 6px 0px;
+	background-color: 				@background;
+	text-color: 					@foreground;
+    border:                  		0px 0px 1px 0px;
+    border-color:                  	@selected;
+    border-radius:                  0px;
+}
+
+textbox-prompt-colon {
+	expand: 						false;
+	str: 							"🧮";
+    border-radius:                  0px;
+    background-color:               @highlight;
+    text-color:                     @background;
+    padding:    					6px 10px 6px 10px;
+	font:							"Iosevka Nerd Font 10";
+}
+
+entry {
+    background-color:               @background;
+    text-color:                     @foreground;
+    border:                  		0px 0px 1px 0px;
+    border-radius:                  0px;
+    border-color:                  	@selected;
+    placeholder-color:              @foreground;
+    placeholder:                    "Calc...";
+    expand:                         true;
+    horizontal-align:               0;
+    blink:                          true;
+    padding:                        6px;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt, entry ];
+    spacing:                        0;
+    background-color:               @background;
+    text-color:                     @foreground;
+    expand:                         false;
+    margin:                         0px 0px 0px 0px;
+    padding:                        0px;
+    position:                       center;
+}
+
+case-indicator {
+    background-color:               @background;
+    text-color:                     @foreground;
+    spacing:                        0;
+}
+
+mainbox {
+    border: 						0px;
+    border-color: 					@selected;
+    spacing: 						6px;
+    padding: 						10px;
+}
+
+element {
+    background-color:               @background;
+    text-color:                     @foreground;
+    orientation:                    horizontal;
+    border-radius:                  0px;
+    padding:                        5px;
+}

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+DIR="$HOME/.config/bspwm"
+
+rofi \
+    -show calc \
+    -modi calc \
+    -no-lazy-grab \
+    -no-show-match \
+    -no-sort \
+    -theme "$DIR"/rofi/themes/calc.rasi
